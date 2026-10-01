@@ -1,0 +1,31 @@
+{
+  "step": "When I request the patient with id \"00000000-0000-0000-0000-000000000000\"",
+  "timestamp": "2026-10-01 17:47:54 -04:00",
+  "request": {
+    "method": "GET",
+    "url": "http://localhost/openmrs/ws/fhir2/R4/Patient/00000000-0000-0000-0000-000000000000",
+    "headers": {
+      "Accept": "application/fhir+json",
+      "Authorization": "Basic ******** (user: admin)"
+    }
+  },
+  "response": {
+    "status": 404,
+    "statusText": "",
+    "contentType": "application/fhir+json;charset=UTF-8",
+    "body": {
+      "resourceType": "OperationOutcome",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">ERROR</td><td>[]</td><td><pre>Resource of type Patient with ID 00000000-0000-0000-0000-000000000000 is not known</pre></td>\n\t\t\t</tr>\n\t\t</table>\n\t</div>"
+      },
+      "issue": [
+        {
+          "severity": "error",
+          "code": "processing",
+          "diagnostics": "Resource of type Patient with ID 00000000-0000-0000-0000-000000000000 is not known"
+        }
+      ]
+    }
+  }
+}

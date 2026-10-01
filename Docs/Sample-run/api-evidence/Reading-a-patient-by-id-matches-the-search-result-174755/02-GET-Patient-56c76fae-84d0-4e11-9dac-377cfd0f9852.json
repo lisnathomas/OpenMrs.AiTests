@@ -1,0 +1,104 @@
+{
+  "step": "When I read the first patient from the search results by id",
+  "timestamp": "2026-10-01 17:47:56 -04:00",
+  "request": {
+    "method": "GET",
+    "url": "http://localhost/openmrs/ws/fhir2/R4/Patient/56c76fae-84d0-4e11-9dac-377cfd0f9852",
+    "headers": {
+      "Accept": "application/fhir+json",
+      "Authorization": "Basic ******** (user: admin)"
+    }
+  },
+  "response": {
+    "status": 200,
+    "statusText": "",
+    "contentType": "application/fhir+json;charset=UTF-8",
+    "body": {
+      "resourceType": "Patient",
+      "id": "56c76fae-84d0-4e11-9dac-377cfd0f9852",
+      "meta": {
+        "versionId": "1790887084000",
+        "lastUpdated": "2026-10-01T20:38:04.000+00:00"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>56c76fae-84d0-4e11-9dac-377cfd0f9852</td></tr><tr><td>Identifier:</td><td><div>100000Y</div></td></tr><tr><td>Active:</td><td>true</td></tr><tr><td>Name:</td><td> Betty <b>WILLIAMS </b></td></tr><tr><td>Gender:</td><td>FEMALE</td></tr><tr><td>Birth Date:</td><td>15/03/1974</td></tr><tr><td>Deceased:</td><td>false</td></tr><tr><td>Address:</td><td><span>City5311 </span><span>State5311 </span><span>Country5311 </span></td></tr></tbody></table></div>"
+      },
+      "extension": [
+        {
+          "url": "http://fhir.openmrs.org/ext/person-attribute",
+          "extension": [
+            {
+              "url": "http://fhir.openmrs.org/ext/person-attribute-type",
+              "valueString": "demo_patient"
+            },
+            {
+              "url": "http://fhir.openmrs.org/ext/person-attribute-value",
+              "valueBoolean": true
+            }
+          ]
+        }
+      ],
+      "identifier": [
+        {
+          "id": "68406186-8dc3-497c-8369-eb0b05e55beb",
+          "extension": [
+            {
+              "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+              "valueReference": {
+                "reference": "Location/92dbdbdf-17da-4cf0-873c-ad15dfae71cb",
+                "type": "Location",
+                "display": "Site 42"
+              }
+            }
+          ],
+          "use": "official",
+          "type": {
+            "coding": [
+              {
+                "code": "05a29f94-c0ed-11e2-94be-8c13b969e334"
+              }
+            ],
+            "text": "OpenMRS ID"
+          },
+          "value": "100000Y"
+        }
+      ],
+      "active": true,
+      "name": [
+        {
+          "id": "19a5ad29-a218-4613-a066-170d1d186cce",
+          "text": "Betty Williams",
+          "family": "Williams",
+          "given": [
+            "Betty"
+          ]
+        }
+      ],
+      "gender": "female",
+      "birthDate": "1974-03-15",
+      "deceasedBoolean": false,
+      "address": [
+        {
+          "id": "c4945091-ffbf-487b-9c6f-fc9058298b04",
+          "extension": [
+            {
+              "url": "http://fhir.openmrs.org/ext/address",
+              "extension": [
+                {
+                  "url": "http://fhir.openmrs.org/ext/address#address1",
+                  "valueString": "Address15311"
+                }
+              ]
+            }
+          ],
+          "use": "home",
+          "city": "City5311",
+          "state": "State5311",
+          "postalCode": "94773",
+          "country": "Country5311"
+        }
+      ]
+    }
+  }
+}

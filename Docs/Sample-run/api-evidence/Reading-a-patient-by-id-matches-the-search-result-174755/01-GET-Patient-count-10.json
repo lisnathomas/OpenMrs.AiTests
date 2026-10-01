@@ -1,0 +1,938 @@
+{
+  "step": "Given I have searched for patients",
+  "timestamp": "2026-10-01 17:47:56 -04:00",
+  "request": {
+    "method": "GET",
+    "url": "http://localhost/openmrs/ws/fhir2/R4/Patient?_count=10",
+    "headers": {
+      "Accept": "application/fhir+json",
+      "Authorization": "Basic ******** (user: admin)"
+    }
+  },
+  "response": {
+    "status": 200,
+    "statusText": "",
+    "contentType": "application/fhir+json;charset=UTF-8",
+    "body": {
+      "resourceType": "Bundle",
+      "id": "b6463a66-ecda-4208-b5ba-dc6d4ac59cf6",
+      "meta": {
+        "lastUpdated": "2026-10-01T21:47:55.740+00:00"
+      },
+      "type": "searchset",
+      "total": 50,
+      "link": [
+        {
+          "relation": "self",
+          "url": "http://localhost/openmrs/ws/fhir2/R4/Patient?_count=10"
+        },
+        {
+          "relation": "next",
+          "url": "http://localhost/openmrs/ws/fhir2/R4?_getpages=e87a0afd-6760-41e0-81b1-197352e00a57&_getpagesoffset=10&_count=10&_bundletype=searchset"
+        }
+      ],
+      "entry": [
+        {
+          "fullUrl": "http://localhost/openmrs/ws/fhir2/R4/Patient/56c76fae-84d0-4e11-9dac-377cfd0f9852",
+          "resource": {
+            "resourceType": "Patient",
+            "id": "56c76fae-84d0-4e11-9dac-377cfd0f9852",
+            "meta": {
+              "versionId": "1790887084000",
+              "lastUpdated": "2026-10-01T20:38:04.000+00:00"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>56c76fae-84d0-4e11-9dac-377cfd0f9852</td></tr><tr><td>Identifier:</td><td><div>100000Y</div></td></tr><tr><td>Active:</td><td>true</td></tr><tr><td>Name:</td><td> Betty <b>WILLIAMS </b></td></tr><tr><td>Gender:</td><td>FEMALE</td></tr><tr><td>Birth Date:</td><td>15/03/1974</td></tr><tr><td>Deceased:</td><td>false</td></tr><tr><td>Address:</td><td><span>City5311 </span><span>State5311 </span><span>Country5311 </span></td></tr></tbody></table></div>"
+            },
+            "extension": [
+              {
+                "url": "http://fhir.openmrs.org/ext/person-attribute",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-type",
+                    "valueString": "demo_patient"
+                  },
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-value",
+                    "valueBoolean": true
+                  }
+                ]
+              }
+            ],
+            "identifier": [
+              {
+                "id": "68406186-8dc3-497c-8369-eb0b05e55beb",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+                    "valueReference": {
+                      "reference": "Location/92dbdbdf-17da-4cf0-873c-ad15dfae71cb",
+                      "type": "Location",
+                      "display": "Site 42"
+                    }
+                  }
+                ],
+                "use": "official",
+                "type": {
+                  "coding": [
+                    {
+                      "code": "05a29f94-c0ed-11e2-94be-8c13b969e334"
+                    }
+                  ],
+                  "text": "OpenMRS ID"
+                },
+                "value": "100000Y"
+              }
+            ],
+            "active": true,
+            "name": [
+              {
+                "id": "19a5ad29-a218-4613-a066-170d1d186cce",
+                "text": "Betty Williams",
+                "family": "Williams",
+                "given": [
+                  "Betty"
+                ]
+              }
+            ],
+            "gender": "female",
+            "birthDate": "1974-03-15",
+            "deceasedBoolean": false,
+            "address": [
+              {
+                "id": "c4945091-ffbf-487b-9c6f-fc9058298b04",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/address",
+                    "extension": [
+                      {
+                        "url": "http://fhir.openmrs.org/ext/address#address1",
+                        "valueString": "Address15311"
+                      }
+                    ]
+                  }
+                ],
+                "use": "home",
+                "city": "City5311",
+                "state": "State5311",
+                "postalCode": "94773",
+                "country": "Country5311"
+              }
+            ]
+          }
+        },
+        {
+          "fullUrl": "http://localhost/openmrs/ws/fhir2/R4/Patient/8632dda2-b434-4ba3-85f4-9f03f79a7042",
+          "resource": {
+            "resourceType": "Patient",
+            "id": "8632dda2-b434-4ba3-85f4-9f03f79a7042",
+            "meta": {
+              "versionId": "1790887084000",
+              "lastUpdated": "2026-10-01T20:38:04.000+00:00"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>8632dda2-b434-4ba3-85f4-9f03f79a7042</td></tr><tr><td>Identifier:</td><td><div>100001W</div></td></tr><tr><td>Active:</td><td>true</td></tr><tr><td>Name:</td><td> Susan <b>LOPEZ </b></td></tr><tr><td>Gender:</td><td>FEMALE</td></tr><tr><td>Birth Date:</td><td>06/05/1972</td></tr><tr><td>Deceased:</td><td>false</td></tr><tr><td>Address:</td><td><span>City0384 </span><span>State0384 </span><span>Country0384 </span></td></tr></tbody></table></div>"
+            },
+            "extension": [
+              {
+                "url": "http://fhir.openmrs.org/ext/person-attribute",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-type",
+                    "valueString": "demo_patient"
+                  },
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-value",
+                    "valueBoolean": true
+                  }
+                ]
+              }
+            ],
+            "identifier": [
+              {
+                "id": "ede2d8dc-8ffb-45ee-a0c1-f61494bb589c",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+                    "valueReference": {
+                      "reference": "Location/92dbdbdf-17da-4cf0-873c-ad15dfae71cb",
+                      "type": "Location",
+                      "display": "Site 42"
+                    }
+                  }
+                ],
+                "use": "official",
+                "type": {
+                  "coding": [
+                    {
+                      "code": "05a29f94-c0ed-11e2-94be-8c13b969e334"
+                    }
+                  ],
+                  "text": "OpenMRS ID"
+                },
+                "value": "100001W"
+              }
+            ],
+            "active": true,
+            "name": [
+              {
+                "id": "07d3b23b-b9f4-43f7-b888-dedc2f10ad2f",
+                "text": "Susan Lopez",
+                "family": "Lopez",
+                "given": [
+                  "Susan"
+                ]
+              }
+            ],
+            "gender": "female",
+            "birthDate": "1972-05-06",
+            "deceasedBoolean": false,
+            "address": [
+              {
+                "id": "6eb10e65-5920-494e-ba5c-0ee8b7abd43a",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/address",
+                    "extension": [
+                      {
+                        "url": "http://fhir.openmrs.org/ext/address#address1",
+                        "valueString": "Address10384"
+                      }
+                    ]
+                  }
+                ],
+                "use": "home",
+                "city": "City0384",
+                "state": "State0384",
+                "postalCode": "72032",
+                "country": "Country0384"
+              }
+            ]
+          }
+        },
+        {
+          "fullUrl": "http://localhost/openmrs/ws/fhir2/R4/Patient/85cb5fc9-3338-4c37-afdb-43caaa410746",
+          "resource": {
+            "resourceType": "Patient",
+            "id": "85cb5fc9-3338-4c37-afdb-43caaa410746",
+            "meta": {
+              "versionId": "1790887084000",
+              "lastUpdated": "2026-10-01T20:38:04.000+00:00"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>85cb5fc9-3338-4c37-afdb-43caaa410746</td></tr><tr><td>Identifier:</td><td><div>100002U</div></td></tr><tr><td>Active:</td><td>true</td></tr><tr><td>Name:</td><td> Barbara <b>MILLER </b></td></tr><tr><td>Gender:</td><td>FEMALE</td></tr><tr><td>Birth Date:</td><td>09/06/1938</td></tr><tr><td>Deceased:</td><td>false</td></tr><tr><td>Address:</td><td><span>City2253 </span><span>State2253 </span><span>Country2253 </span></td></tr></tbody></table></div>"
+            },
+            "extension": [
+              {
+                "url": "http://fhir.openmrs.org/ext/person-attribute",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-type",
+                    "valueString": "demo_patient"
+                  },
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-value",
+                    "valueBoolean": true
+                  }
+                ]
+              }
+            ],
+            "identifier": [
+              {
+                "id": "07f73336-77c1-4f35-97f8-348796724f1b",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+                    "valueReference": {
+                      "reference": "Location/92dbdbdf-17da-4cf0-873c-ad15dfae71cb",
+                      "type": "Location",
+                      "display": "Site 42"
+                    }
+                  }
+                ],
+                "use": "official",
+                "type": {
+                  "coding": [
+                    {
+                      "code": "05a29f94-c0ed-11e2-94be-8c13b969e334"
+                    }
+                  ],
+                  "text": "OpenMRS ID"
+                },
+                "value": "100002U"
+              }
+            ],
+            "active": true,
+            "name": [
+              {
+                "id": "724f7bf7-b917-479e-84b7-df5107cbd755",
+                "text": "Barbara Miller",
+                "family": "Miller",
+                "given": [
+                  "Barbara"
+                ]
+              }
+            ],
+            "gender": "female",
+            "birthDate": "1938-06-09",
+            "deceasedBoolean": false,
+            "address": [
+              {
+                "id": "19ce1a56-6a03-44cf-9156-c3d8486a4ea0",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/address",
+                    "extension": [
+                      {
+                        "url": "http://fhir.openmrs.org/ext/address#address1",
+                        "valueString": "Address12253"
+                      }
+                    ]
+                  }
+                ],
+                "use": "home",
+                "city": "City2253",
+                "state": "State2253",
+                "postalCode": "85055",
+                "country": "Country2253"
+              }
+            ]
+          }
+        },
+        {
+          "fullUrl": "http://localhost/openmrs/ws/fhir2/R4/Patient/6569f4bd-ee57-411b-8d37-94e08a9ce1c4",
+          "resource": {
+            "resourceType": "Patient",
+            "id": "6569f4bd-ee57-411b-8d37-94e08a9ce1c4",
+            "meta": {
+              "versionId": "1790887084000",
+              "lastUpdated": "2026-10-01T20:38:04.000+00:00"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>6569f4bd-ee57-411b-8d37-94e08a9ce1c4</td></tr><tr><td>Identifier:</td><td><div>100003R</div></td></tr><tr><td>Active:</td><td>true</td></tr><tr><td>Name:</td><td> Grace <b>GARCIA </b></td></tr><tr><td>Gender:</td><td>FEMALE</td></tr><tr><td>Birth Date:</td><td>18/01/1959</td></tr><tr><td>Deceased:</td><td>false</td></tr><tr><td>Address:</td><td><span>City2976 </span><span>State2976 </span><span>Country2976 </span></td></tr></tbody></table></div>"
+            },
+            "extension": [
+              {
+                "url": "http://fhir.openmrs.org/ext/person-attribute",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-type",
+                    "valueString": "demo_patient"
+                  },
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-value",
+                    "valueBoolean": true
+                  }
+                ]
+              }
+            ],
+            "identifier": [
+              {
+                "id": "48a2414e-e260-412f-9c6c-c29cfe4e18f0",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+                    "valueReference": {
+                      "reference": "Location/92dbdbdf-17da-4cf0-873c-ad15dfae71cb",
+                      "type": "Location",
+                      "display": "Site 42"
+                    }
+                  }
+                ],
+                "use": "official",
+                "type": {
+                  "coding": [
+                    {
+                      "code": "05a29f94-c0ed-11e2-94be-8c13b969e334"
+                    }
+                  ],
+                  "text": "OpenMRS ID"
+                },
+                "value": "100003R"
+              }
+            ],
+            "active": true,
+            "name": [
+              {
+                "id": "a35ab37a-0131-40ec-a8fb-7a0a688c6c3f",
+                "text": "Grace Garcia",
+                "family": "Garcia",
+                "given": [
+                  "Grace"
+                ]
+              }
+            ],
+            "gender": "female",
+            "birthDate": "1959-01-18",
+            "deceasedBoolean": false,
+            "address": [
+              {
+                "id": "f273db3f-7030-4ece-8810-8d93236c62ac",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/address",
+                    "extension": [
+                      {
+                        "url": "http://fhir.openmrs.org/ext/address#address1",
+                        "valueString": "Address12976"
+                      }
+                    ]
+                  }
+                ],
+                "use": "home",
+                "city": "City2976",
+                "state": "State2976",
+                "postalCode": "67687",
+                "country": "Country2976"
+              }
+            ]
+          }
+        },
+        {
+          "fullUrl": "http://localhost/openmrs/ws/fhir2/R4/Patient/ae6ef7b1-7fc6-41d2-889f-5ed1e9848589",
+          "resource": {
+            "resourceType": "Patient",
+            "id": "ae6ef7b1-7fc6-41d2-889f-5ed1e9848589",
+            "meta": {
+              "versionId": "1790887085000",
+              "lastUpdated": "2026-10-01T20:38:05.000+00:00"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>ae6ef7b1-7fc6-41d2-889f-5ed1e9848589</td></tr><tr><td>Identifier:</td><td><div>100004N</div></td></tr><tr><td>Active:</td><td>true</td></tr><tr><td>Name:</td><td> Mark <b>SMITH </b></td></tr><tr><td>Gender:</td><td>MALE</td></tr><tr><td>Birth Date:</td><td>14/06/2015</td></tr><tr><td>Deceased:</td><td>false</td></tr><tr><td>Address:</td><td><span>City8718 </span><span>State8718 </span><span>Country8718 </span></td></tr></tbody></table></div>"
+            },
+            "extension": [
+              {
+                "url": "http://fhir.openmrs.org/ext/person-attribute",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-type",
+                    "valueString": "demo_patient"
+                  },
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-value",
+                    "valueBoolean": true
+                  }
+                ]
+              }
+            ],
+            "identifier": [
+              {
+                "id": "15438579-3201-4b08-8b80-60461cf1fde7",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+                    "valueReference": {
+                      "reference": "Location/92dbdbdf-17da-4cf0-873c-ad15dfae71cb",
+                      "type": "Location",
+                      "display": "Site 42"
+                    }
+                  }
+                ],
+                "use": "official",
+                "type": {
+                  "coding": [
+                    {
+                      "code": "05a29f94-c0ed-11e2-94be-8c13b969e334"
+                    }
+                  ],
+                  "text": "OpenMRS ID"
+                },
+                "value": "100004N"
+              }
+            ],
+            "active": true,
+            "name": [
+              {
+                "id": "24797cff-85d8-4605-9b87-724e66ce5cec",
+                "text": "Mark Smith",
+                "family": "Smith",
+                "given": [
+                  "Mark"
+                ]
+              }
+            ],
+            "gender": "male",
+            "birthDate": "2015-06-14",
+            "deceasedBoolean": false,
+            "address": [
+              {
+                "id": "a89bb635-f6cc-43d3-b5a1-620ed0090115",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/address",
+                    "extension": [
+                      {
+                        "url": "http://fhir.openmrs.org/ext/address#address1",
+                        "valueString": "Address18718"
+                      }
+                    ]
+                  }
+                ],
+                "use": "home",
+                "city": "City8718",
+                "state": "State8718",
+                "postalCode": "88827",
+                "country": "Country8718"
+              }
+            ]
+          }
+        },
+        {
+          "fullUrl": "http://localhost/openmrs/ws/fhir2/R4/Patient/deb71f77-55ee-4488-9fe6-1330781c285c",
+          "resource": {
+            "resourceType": "Patient",
+            "id": "deb71f77-55ee-4488-9fe6-1330781c285c",
+            "meta": {
+              "versionId": "1790887085000",
+              "lastUpdated": "2026-10-01T20:38:05.000+00:00"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>deb71f77-55ee-4488-9fe6-1330781c285c</td></tr><tr><td>Identifier:</td><td><div>100005L</div></td></tr><tr><td>Active:</td><td>true</td></tr><tr><td>Name:</td><td> James <b>MARTINEZ </b></td></tr><tr><td>Gender:</td><td>MALE</td></tr><tr><td>Birth Date:</td><td>10/04/1965</td></tr><tr><td>Deceased:</td><td>false</td></tr><tr><td>Address:</td><td><span>City0737 </span><span>State0737 </span><span>Country0737 </span></td></tr></tbody></table></div>"
+            },
+            "extension": [
+              {
+                "url": "http://fhir.openmrs.org/ext/person-attribute",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-type",
+                    "valueString": "demo_patient"
+                  },
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-value",
+                    "valueBoolean": true
+                  }
+                ]
+              }
+            ],
+            "identifier": [
+              {
+                "id": "f5952ce1-1fae-4bfb-a55e-70f990d07e16",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+                    "valueReference": {
+                      "reference": "Location/92dbdbdf-17da-4cf0-873c-ad15dfae71cb",
+                      "type": "Location",
+                      "display": "Site 42"
+                    }
+                  }
+                ],
+                "use": "official",
+                "type": {
+                  "coding": [
+                    {
+                      "code": "05a29f94-c0ed-11e2-94be-8c13b969e334"
+                    }
+                  ],
+                  "text": "OpenMRS ID"
+                },
+                "value": "100005L"
+              }
+            ],
+            "active": true,
+            "name": [
+              {
+                "id": "b08396dc-682f-4311-bac2-c4e89e24d421",
+                "text": "James Martinez",
+                "family": "Martinez",
+                "given": [
+                  "James"
+                ]
+              }
+            ],
+            "gender": "male",
+            "birthDate": "1965-04-10",
+            "deceasedBoolean": false,
+            "address": [
+              {
+                "id": "bd581983-95d2-4fbf-bd00-61d18cd42172",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/address",
+                    "extension": [
+                      {
+                        "url": "http://fhir.openmrs.org/ext/address#address1",
+                        "valueString": "Address10737"
+                      }
+                    ]
+                  }
+                ],
+                "use": "home",
+                "city": "City0737",
+                "state": "State0737",
+                "postalCode": "95293",
+                "country": "Country0737"
+              }
+            ]
+          }
+        },
+        {
+          "fullUrl": "http://localhost/openmrs/ws/fhir2/R4/Patient/189047a9-7c90-4f9b-a417-1ad14e5aa521",
+          "resource": {
+            "resourceType": "Patient",
+            "id": "189047a9-7c90-4f9b-a417-1ad14e5aa521",
+            "meta": {
+              "versionId": "1790887085000",
+              "lastUpdated": "2026-10-01T20:38:05.000+00:00"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>189047a9-7c90-4f9b-a417-1ad14e5aa521</td></tr><tr><td>Identifier:</td><td><div>100006J</div></td></tr><tr><td>Active:</td><td>true</td></tr><tr><td>Name:</td><td> Michael <b>TURNER </b></td></tr><tr><td>Gender:</td><td>MALE</td></tr><tr><td>Birth Date:</td><td>12/04/1989</td></tr><tr><td>Deceased:</td><td>false</td></tr><tr><td>Address:</td><td><span>City6372 </span><span>State6372 </span><span>Country6372 </span></td></tr></tbody></table></div>"
+            },
+            "extension": [
+              {
+                "url": "http://fhir.openmrs.org/ext/person-attribute",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-type",
+                    "valueString": "demo_patient"
+                  },
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-value",
+                    "valueBoolean": true
+                  }
+                ]
+              }
+            ],
+            "identifier": [
+              {
+                "id": "a0c11f17-c6ad-42da-ae7d-391efdf4ceea",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+                    "valueReference": {
+                      "reference": "Location/92dbdbdf-17da-4cf0-873c-ad15dfae71cb",
+                      "type": "Location",
+                      "display": "Site 42"
+                    }
+                  }
+                ],
+                "use": "official",
+                "type": {
+                  "coding": [
+                    {
+                      "code": "05a29f94-c0ed-11e2-94be-8c13b969e334"
+                    }
+                  ],
+                  "text": "OpenMRS ID"
+                },
+                "value": "100006J"
+              }
+            ],
+            "active": true,
+            "name": [
+              {
+                "id": "f6837eaf-8956-49a6-8466-7ce7d5be160a",
+                "text": "Michael Turner",
+                "family": "Turner",
+                "given": [
+                  "Michael"
+                ]
+              }
+            ],
+            "gender": "male",
+            "birthDate": "1989-04-12",
+            "deceasedBoolean": false,
+            "address": [
+              {
+                "id": "e178ca07-42bb-427c-bc7e-c6aca083036c",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/address",
+                    "extension": [
+                      {
+                        "url": "http://fhir.openmrs.org/ext/address#address1",
+                        "valueString": "Address16372"
+                      }
+                    ]
+                  }
+                ],
+                "use": "home",
+                "city": "City6372",
+                "state": "State6372",
+                "postalCode": "51659",
+                "country": "Country6372"
+              }
+            ]
+          }
+        },
+        {
+          "fullUrl": "http://localhost/openmrs/ws/fhir2/R4/Patient/d8ce6b01-38a0-42dc-8a81-f676b42a42d6",
+          "resource": {
+            "resourceType": "Patient",
+            "id": "d8ce6b01-38a0-42dc-8a81-f676b42a42d6",
+            "meta": {
+              "versionId": "1790887085000",
+              "lastUpdated": "2026-10-01T20:38:05.000+00:00"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>d8ce6b01-38a0-42dc-8a81-f676b42a42d6</td></tr><tr><td>Identifier:</td><td><div>100007G</div></td></tr><tr><td>Active:</td><td>true</td></tr><tr><td>Name:</td><td> Kevin <b>BROWN </b></td></tr><tr><td>Gender:</td><td>MALE</td></tr><tr><td>Birth Date:</td><td>22/01/1970</td></tr><tr><td>Deceased:</td><td>false</td></tr><tr><td>Address:</td><td><span>City3058 </span><span>State3058 </span><span>Country3058 </span></td></tr></tbody></table></div>"
+            },
+            "extension": [
+              {
+                "url": "http://fhir.openmrs.org/ext/person-attribute",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-type",
+                    "valueString": "demo_patient"
+                  },
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-value",
+                    "valueBoolean": true
+                  }
+                ]
+              }
+            ],
+            "identifier": [
+              {
+                "id": "3c70a77b-0538-46c6-a171-b361f1491c87",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+                    "valueReference": {
+                      "reference": "Location/92dbdbdf-17da-4cf0-873c-ad15dfae71cb",
+                      "type": "Location",
+                      "display": "Site 42"
+                    }
+                  }
+                ],
+                "use": "official",
+                "type": {
+                  "coding": [
+                    {
+                      "code": "05a29f94-c0ed-11e2-94be-8c13b969e334"
+                    }
+                  ],
+                  "text": "OpenMRS ID"
+                },
+                "value": "100007G"
+              }
+            ],
+            "active": true,
+            "name": [
+              {
+                "id": "a36b12c3-1222-4ec1-83f8-38713aa522b2",
+                "text": "Kevin Brown",
+                "family": "Brown",
+                "given": [
+                  "Kevin"
+                ]
+              }
+            ],
+            "gender": "male",
+            "birthDate": "1970-01-22",
+            "deceasedBoolean": false,
+            "address": [
+              {
+                "id": "32b56b3e-6a42-49cb-a2f2-236ac008071c",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/address",
+                    "extension": [
+                      {
+                        "url": "http://fhir.openmrs.org/ext/address#address1",
+                        "valueString": "Address13058"
+                      }
+                    ]
+                  }
+                ],
+                "use": "home",
+                "city": "City3058",
+                "state": "State3058",
+                "postalCode": "17761",
+                "country": "Country3058"
+              }
+            ]
+          }
+        },
+        {
+          "fullUrl": "http://localhost/openmrs/ws/fhir2/R4/Patient/a1945b9f-9be2-4528-ac5b-66959accee62",
+          "resource": {
+            "resourceType": "Patient",
+            "id": "a1945b9f-9be2-4528-ac5b-66959accee62",
+            "meta": {
+              "versionId": "1790887085000",
+              "lastUpdated": "2026-10-01T20:38:05.000+00:00"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>a1945b9f-9be2-4528-ac5b-66959accee62</td></tr><tr><td>Identifier:</td><td><div>100008E</div></td></tr><tr><td>Active:</td><td>true</td></tr><tr><td>Name:</td><td> Joshua <b>JOHNSON </b></td></tr><tr><td>Gender:</td><td>MALE</td></tr><tr><td>Birth Date:</td><td>25/09/2021</td></tr><tr><td>Deceased:</td><td>false</td></tr><tr><td>Address:</td><td><span>City6442 </span><span>State6442 </span><span>Country6442 </span></td></tr></tbody></table></div>"
+            },
+            "extension": [
+              {
+                "url": "http://fhir.openmrs.org/ext/person-attribute",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-type",
+                    "valueString": "demo_patient"
+                  },
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-value",
+                    "valueBoolean": true
+                  }
+                ]
+              }
+            ],
+            "identifier": [
+              {
+                "id": "ecba349d-b8dd-4d8d-85ab-6f2a0e0c5185",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+                    "valueReference": {
+                      "reference": "Location/92dbdbdf-17da-4cf0-873c-ad15dfae71cb",
+                      "type": "Location",
+                      "display": "Site 42"
+                    }
+                  }
+                ],
+                "use": "official",
+                "type": {
+                  "coding": [
+                    {
+                      "code": "05a29f94-c0ed-11e2-94be-8c13b969e334"
+                    }
+                  ],
+                  "text": "OpenMRS ID"
+                },
+                "value": "100008E"
+              }
+            ],
+            "active": true,
+            "name": [
+              {
+                "id": "269da99f-77a3-4b97-bac5-dbb1dc76b077",
+                "text": "Joshua Johnson",
+                "family": "Johnson",
+                "given": [
+                  "Joshua"
+                ]
+              }
+            ],
+            "gender": "male",
+            "birthDate": "2021-09-25",
+            "deceasedBoolean": false,
+            "address": [
+              {
+                "id": "13849de7-4021-4150-8229-5505b04f91e6",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/address",
+                    "extension": [
+                      {
+                        "url": "http://fhir.openmrs.org/ext/address#address1",
+                        "valueString": "Address16442"
+                      }
+                    ]
+                  }
+                ],
+                "use": "home",
+                "city": "City6442",
+                "state": "State6442",
+                "postalCode": "20839",
+                "country": "Country6442"
+              }
+            ]
+          }
+        },
+        {
+          "fullUrl": "http://localhost/openmrs/ws/fhir2/R4/Patient/4b778e0c-ab21-485c-a342-1a8c5f26e195",
+          "resource": {
+            "resourceType": "Patient",
+            "id": "4b778e0c-ab21-485c-a342-1a8c5f26e195",
+            "meta": {
+              "versionId": "1790887085000",
+              "lastUpdated": "2026-10-01T20:38:05.000+00:00"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>4b778e0c-ab21-485c-a342-1a8c5f26e195</td></tr><tr><td>Identifier:</td><td><div>100009C</div></td></tr><tr><td>Active:</td><td>true</td></tr><tr><td>Name:</td><td> Emily <b>HILL </b></td></tr><tr><td>Gender:</td><td>FEMALE</td></tr><tr><td>Birth Date:</td><td>01/11/2003</td></tr><tr><td>Deceased:</td><td>false</td></tr><tr><td>Address:</td><td><span>City9711 </span><span>State9711 </span><span>Country9711 </span></td></tr></tbody></table></div>"
+            },
+            "extension": [
+              {
+                "url": "http://fhir.openmrs.org/ext/person-attribute",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-type",
+                    "valueString": "demo_patient"
+                  },
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-value",
+                    "valueBoolean": true
+                  }
+                ]
+              }
+            ],
+            "identifier": [
+              {
+                "id": "061e177c-a55e-49f6-98a5-a09435fd9dd1",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+                    "valueReference": {
+                      "reference": "Location/92dbdbdf-17da-4cf0-873c-ad15dfae71cb",
+                      "type": "Location",
+                      "display": "Site 42"
+                    }
+                  }
+                ],
+                "use": "official",
+                "type": {
+                  "coding": [
+                    {
+                      "code": "05a29f94-c0ed-11e2-94be-8c13b969e334"
+                    }
+                  ],
+                  "text": "OpenMRS ID"
+                },
+                "value": "100009C"
+              }
+            ],
+            "active": true,
+            "name": [
+              {
+                "id": "2a3e9f49-e322-4476-964a-328b954cba2c",
+                "text": "Emily Hill",
+                "family": "Hill",
+                "given": [
+                  "Emily"
+                ]
+              }
+            ],
+            "gender": "female",
+            "birthDate": "2003-11-01",
+            "deceasedBoolean": false,
+            "address": [
+              {
+                "id": "2fde91c2-30f8-4629-8307-d2e2b57a5fef",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/address",
+                    "extension": [
+                      {
+                        "url": "http://fhir.openmrs.org/ext/address#address1",
+                        "valueString": "Address19711"
+                      }
+                    ]
+                  }
+                ],
+                "use": "home",
+                "city": "City9711",
+                "state": "State9711",
+                "postalCode": "37861",
+                "country": "Country9711"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

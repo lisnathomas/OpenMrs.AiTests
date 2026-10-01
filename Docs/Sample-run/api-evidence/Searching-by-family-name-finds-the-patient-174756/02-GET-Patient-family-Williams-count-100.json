@@ -1,0 +1,304 @@
+{
+  "step": "When I search for patients by the family name of the first search result",
+  "timestamp": "2026-10-01 17:47:57 -04:00",
+  "request": {
+    "method": "GET",
+    "url": "http://localhost/openmrs/ws/fhir2/R4/Patient?family=Williams&_count=100",
+    "headers": {
+      "Accept": "application/fhir+json",
+      "Authorization": "Basic ******** (user: admin)"
+    }
+  },
+  "response": {
+    "status": 200,
+    "statusText": "",
+    "contentType": "application/fhir+json;charset=UTF-8",
+    "body": {
+      "resourceType": "Bundle",
+      "id": "4f39b8b6-719c-471b-b24f-bb2836418124",
+      "meta": {
+        "lastUpdated": "2026-10-01T21:47:57.031+00:00"
+      },
+      "type": "searchset",
+      "total": 3,
+      "link": [
+        {
+          "relation": "self",
+          "url": "http://localhost/openmrs/ws/fhir2/R4/Patient?_count=100&family=Williams"
+        }
+      ],
+      "entry": [
+        {
+          "fullUrl": "http://localhost/openmrs/ws/fhir2/R4/Patient/56c76fae-84d0-4e11-9dac-377cfd0f9852",
+          "resource": {
+            "resourceType": "Patient",
+            "id": "56c76fae-84d0-4e11-9dac-377cfd0f9852",
+            "meta": {
+              "versionId": "1790887084000",
+              "lastUpdated": "2026-10-01T20:38:04.000+00:00"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>56c76fae-84d0-4e11-9dac-377cfd0f9852</td></tr><tr><td>Identifier:</td><td><div>100000Y</div></td></tr><tr><td>Active:</td><td>true</td></tr><tr><td>Name:</td><td> Betty <b>WILLIAMS </b></td></tr><tr><td>Gender:</td><td>FEMALE</td></tr><tr><td>Birth Date:</td><td>15/03/1974</td></tr><tr><td>Deceased:</td><td>false</td></tr><tr><td>Address:</td><td><span>City5311 </span><span>State5311 </span><span>Country5311 </span></td></tr></tbody></table></div>"
+            },
+            "extension": [
+              {
+                "url": "http://fhir.openmrs.org/ext/person-attribute",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-type",
+                    "valueString": "demo_patient"
+                  },
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-value",
+                    "valueBoolean": true
+                  }
+                ]
+              }
+            ],
+            "identifier": [
+              {
+                "id": "68406186-8dc3-497c-8369-eb0b05e55beb",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+                    "valueReference": {
+                      "reference": "Location/92dbdbdf-17da-4cf0-873c-ad15dfae71cb",
+                      "type": "Location",
+                      "display": "Site 42"
+                    }
+                  }
+                ],
+                "use": "official",
+                "type": {
+                  "coding": [
+                    {
+                      "code": "05a29f94-c0ed-11e2-94be-8c13b969e334"
+                    }
+                  ],
+                  "text": "OpenMRS ID"
+                },
+                "value": "100000Y"
+              }
+            ],
+            "active": true,
+            "name": [
+              {
+                "id": "19a5ad29-a218-4613-a066-170d1d186cce",
+                "text": "Betty Williams",
+                "family": "Williams",
+                "given": [
+                  "Betty"
+                ]
+              }
+            ],
+            "gender": "female",
+            "birthDate": "1974-03-15",
+            "deceasedBoolean": false,
+            "address": [
+              {
+                "id": "c4945091-ffbf-487b-9c6f-fc9058298b04",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/address",
+                    "extension": [
+                      {
+                        "url": "http://fhir.openmrs.org/ext/address#address1",
+                        "valueString": "Address15311"
+                      }
+                    ]
+                  }
+                ],
+                "use": "home",
+                "city": "City5311",
+                "state": "State5311",
+                "postalCode": "94773",
+                "country": "Country5311"
+              }
+            ]
+          }
+        },
+        {
+          "fullUrl": "http://localhost/openmrs/ws/fhir2/R4/Patient/59ffe48f-22cb-4222-9a95-a215e9730824",
+          "resource": {
+            "resourceType": "Patient",
+            "id": "59ffe48f-22cb-4222-9a95-a215e9730824",
+            "meta": {
+              "versionId": "1790887087000",
+              "lastUpdated": "2026-10-01T20:38:07.000+00:00"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>59ffe48f-22cb-4222-9a95-a215e9730824</td></tr><tr><td>Identifier:</td><td><div>10000HV</div></td></tr><tr><td>Active:</td><td>true</td></tr><tr><td>Name:</td><td> David <b>WILLIAMS </b></td></tr><tr><td>Gender:</td><td>MALE</td></tr><tr><td>Birth Date:</td><td>10/04/2000</td></tr><tr><td>Deceased:</td><td>false</td></tr><tr><td>Address:</td><td><span>City9327 </span><span>State9327 </span><span>Country9327 </span></td></tr></tbody></table></div>"
+            },
+            "extension": [
+              {
+                "url": "http://fhir.openmrs.org/ext/person-attribute",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-type",
+                    "valueString": "demo_patient"
+                  },
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-value",
+                    "valueBoolean": true
+                  }
+                ]
+              }
+            ],
+            "identifier": [
+              {
+                "id": "1309f730-29ee-44c0-aa44-213ad98b8f17",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+                    "valueReference": {
+                      "reference": "Location/92dbdbdf-17da-4cf0-873c-ad15dfae71cb",
+                      "type": "Location",
+                      "display": "Site 42"
+                    }
+                  }
+                ],
+                "use": "official",
+                "type": {
+                  "coding": [
+                    {
+                      "code": "05a29f94-c0ed-11e2-94be-8c13b969e334"
+                    }
+                  ],
+                  "text": "OpenMRS ID"
+                },
+                "value": "10000HV"
+              }
+            ],
+            "active": true,
+            "name": [
+              {
+                "id": "09c128c2-a269-461e-be60-7f2cc9f0f8f1",
+                "text": "David Williams",
+                "family": "Williams",
+                "given": [
+                  "David"
+                ]
+              }
+            ],
+            "gender": "male",
+            "birthDate": "2000-04-10",
+            "deceasedBoolean": false,
+            "address": [
+              {
+                "id": "0849cc76-b66e-4cbf-9565-01974e6c6dbb",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/address",
+                    "extension": [
+                      {
+                        "url": "http://fhir.openmrs.org/ext/address#address1",
+                        "valueString": "Address19327"
+                      }
+                    ]
+                  }
+                ],
+                "use": "home",
+                "city": "City9327",
+                "state": "State9327",
+                "postalCode": "05464",
+                "country": "Country9327"
+              }
+            ]
+          }
+        },
+        {
+          "fullUrl": "http://localhost/openmrs/ws/fhir2/R4/Patient/96b08ff9-6e1e-4099-b6dc-36274a8ec7f2",
+          "resource": {
+            "resourceType": "Patient",
+            "id": "96b08ff9-6e1e-4099-b6dc-36274a8ec7f2",
+            "meta": {
+              "versionId": "1790887091000",
+              "lastUpdated": "2026-10-01T20:38:11.000+00:00"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>96b08ff9-6e1e-4099-b6dc-36274a8ec7f2</td></tr><tr><td>Identifier:</td><td><div>100019A</div></td></tr><tr><td>Active:</td><td>true</td></tr><tr><td>Name:</td><td> Mark <b>WILLIAMS </b></td></tr><tr><td>Gender:</td><td>MALE</td></tr><tr><td>Birth Date:</td><td>05/04/1963</td></tr><tr><td>Deceased:</td><td>false</td></tr><tr><td>Address:</td><td><span>City6582 </span><span>State6582 </span><span>Country6582 </span></td></tr></tbody></table></div>"
+            },
+            "extension": [
+              {
+                "url": "http://fhir.openmrs.org/ext/person-attribute",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-type",
+                    "valueString": "demo_patient"
+                  },
+                  {
+                    "url": "http://fhir.openmrs.org/ext/person-attribute-value",
+                    "valueBoolean": true
+                  }
+                ]
+              }
+            ],
+            "identifier": [
+              {
+                "id": "c403b449-1b39-477f-adc5-e14a5e55729c",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+                    "valueReference": {
+                      "reference": "Location/92dbdbdf-17da-4cf0-873c-ad15dfae71cb",
+                      "type": "Location",
+                      "display": "Site 42"
+                    }
+                  }
+                ],
+                "use": "official",
+                "type": {
+                  "coding": [
+                    {
+                      "code": "05a29f94-c0ed-11e2-94be-8c13b969e334"
+                    }
+                  ],
+                  "text": "OpenMRS ID"
+                },
+                "value": "100019A"
+              }
+            ],
+            "active": true,
+            "name": [
+              {
+                "id": "b670e6f4-72a1-4e11-8c37-47efbd9b1daa",
+                "text": "Mark Williams",
+                "family": "Williams",
+                "given": [
+                  "Mark"
+                ]
+              }
+            ],
+            "gender": "male",
+            "birthDate": "1963-04-05",
+            "deceasedBoolean": false,
+            "address": [
+              {
+                "id": "af9daa13-9bc8-4eb4-a71e-cad5a421ac1c",
+                "extension": [
+                  {
+                    "url": "http://fhir.openmrs.org/ext/address",
+                    "extension": [
+                      {
+                        "url": "http://fhir.openmrs.org/ext/address#address1",
+                        "valueString": "Address16582"
+                      }
+                    ]
+                  }
+                ],
+                "use": "home",
+                "city": "City6582",
+                "state": "State6582",
+                "postalCode": "07339",
+                "country": "Country6582"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
