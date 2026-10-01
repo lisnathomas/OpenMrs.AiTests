@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Test runner plumbing -->
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.*" />
+    <PackageReference Include="NUnit" Version="4.*" />
+    <PackageReference Include="NUnit3TestAdapter" Version="5.*" />
+
+    <!-- BDD: turns .feature files into NUnit tests (Reqnroll is the successor to SpecFlow) -->
+    <PackageReference Include="Reqnroll.NUnit" Version="3.*" />
+
+    <!-- Browser automation AND API testing -->
+    <PackageReference Include="Microsoft.Playwright" Version="1.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Edit this file to change how the tests run (headed, speed, captions...). -->
+    <None Update="testsettings.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

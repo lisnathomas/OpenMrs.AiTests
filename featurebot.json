@@ -1,0 +1,6 @@
+{
+  "appName": "OpenMRS 3",
+  "appDescription": "OpenMRS 3 is an open-source electronic medical record (EMR) system used by clinics. It has a web app for clinicians and a FHIR R4 API for exchanging patient data.",
+  "testProjectDir": "OpenMrs.Tests",
+  "storiesDir": "stories"
+}

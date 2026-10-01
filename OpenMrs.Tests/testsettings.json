@@ -1,0 +1,11 @@
+{
+  "baseUrl": "http://localhost/openmrs",
+  "username": "admin",
+  "password": "Admin123",
+
+  "headed": true,
+  "slowMoMs": 600,
+  "pauseAtEndMs": 2000,
+  "stepCaptions": true,
+  "recordTrace": true
+}
