@@ -6,8 +6,8 @@ End-to-end UI and FHIR API tests for [OpenMRS 3](https://openmrs.org), an open-s
 
 > Uses synthetic demo data only. Never run these tests against a system containing real patient data.
 
-##Evidences
- [Sample test run report](https://lisnathomas.github.io/openmrs-ai-test-automation/sample-run/report.html): every scenario with its video, trace and API evidence
+## Evidences
+ [Sample test run report](https://openmrs-ai-test-automation.vercel.app): every scenario with its video, trace and API evidence
     - [Test videos](docs/sample-run/videos) · [API evidence](docs/sample-run/api-evidence)
 
 ---

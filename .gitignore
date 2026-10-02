@@ -5,3 +5,6 @@ TestResults/
 *.user
 .vs/
 .idea/
+
+.vercel
+.env*

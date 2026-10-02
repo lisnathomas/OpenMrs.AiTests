@@ -1,0 +1,4 @@
+# Only the static evidence report is deployed; the .NET test code stays out.
+/*
+!docs
+!vercel.json

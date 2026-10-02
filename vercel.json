@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "outputDirectory": "docs",
+  "redirects": [
+    { "source": "/", "destination": "/sample-run/report.html", "permanent": false }
+  ]
+}
